@@ -1,0 +1,37 @@
+/*
+* @Author: 15605
+* @Date:   2017-12-26 15:40:55
+* @Last Modified by:   15605
+* @Last Modified time: 2017-12-26 16:50:27
+*/
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-family: "Arial", 'Microsoft Yahei';
+  background: #FFF;
+}
+h1, h2 {
+  margin: 0 0 0.4em;
+}
+.popup{
+  width: 200px;
+  height: 160px;
+}
+.popup .inner{
+  padding: 5px 10px 10px;
+}
+.popup h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #FFA200;
+  display: block;
+  text-align: center;
+}

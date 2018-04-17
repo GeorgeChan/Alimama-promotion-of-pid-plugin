@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/libs/bootstrap.css">
+  <link rel="stylesheet" href="/libs/jquery.toast.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container" style="padding-bottom: 200px;">
+    <h1 class="text-center">APP推广位批量生成插件</h1>
+    <div class="row" style="margin-bottom: 50px;">
+      <div class="col-lg-7">
+        <div class="input-group">
+          <span class="input-group-addon">输入渠道名称</span>
+          <input type="text" id="name-qd" class="form-control" placeholder="请输入渠道名称">
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <span id="name-pt" style="display: inline-block;padding: 9px 12px;font-size: 14px;font-weight: normal;line-height: 1;color: #555;text-align: center;background-color: #eee;border: 1px solid #ccc;border-radius: 4px;border-top-right-radius: 0;border-bottom-right-radius: 0;border-right: 0;white-space: nowrap;vertical-align: middle;margin-right: -5px">请选择所属平台</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="border-top-left-radius: 0;border-bottom-left-radius: 0;padding-left: 0px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pt-boxs" role="menu">
+            <li id="android"><a data-pt="android" href="#" role="button">识货安卓</a></li>
+            <li id="ios"><a data-pt="ios" href="#" role="button">识货IOS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <button id="createTgw" type="button" class="btn btn-primary">生成推广位</button>
+      </div>
+    </div>
+    <div id="data-box" >
+      <table class="table table-hover" id="mainBox">
+        <thead>
+          <tr>
+            <th>预览推广位名称</th>
+            <th>Pid</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div style="position: fixed;bottom: 50px;left: 50%; width: 300px; margin-left: -150px;">
+      <button id="confirm" class="btn btn-default" type="submit" style="margin-right: 20px;">确认</button>
+      <button id="save" class="btn btn-success" type="submit" style="margin-right: 20px;display: none;">保存</button>
+      <button id="cancel" class="btn btn-warning" type="submit" style="margin-right: 20px;">取消</button>
+    </div>
+  </div>
+  <div class="loading">
+    <div class="loadingGif">
+      <img src="../images/timg.gif" alt="">
+    </div>
+  </div>
+  <script src="/libs/lib.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/libs/jquery.toast.js"></script>
+</body>
+</html>
